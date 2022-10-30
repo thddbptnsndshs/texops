@@ -10,24 +10,23 @@ A simple instrument for creating TeX projects from a cookie-cutter template. Thr
 
 1. Clone the texops directory to your home directory:
 
-`cd ~
-git clone git@github.com:thddbptnsndshs/texops.git`
+`cd ~`<br>
+`git clone git@github.com:thddbptnsndshs/texops.git`<br>
 
 2. Move the texops file with a zsh script to `/usr/local/bin`:
 
-`sudo cp ~/texops/texops /usr/local/bin/`
+`sudo cp ~/texops/texops /usr/local/bin/`<br>
 
 3. Give necessary access permissions to the script:
 
-`cd /usr/local/bin 
-sudo chmod -x ./desktop
-sudo chmod 755 desktop`
+`cd /usr/local/bin` <br>
+`sudo chmod -x ./desktop`<br>
+`sudo chmod 755 desktop`<br>
 
 4. Open the `~/.zshrc` file and append the following lines:
 
-`texops() {
-   bash ~/texops/texops $1 $2
-}`
+`texops() {`<br>
+   `bash ~/texops/texops $1 $2}`<br>
 
 5. Restart your Terminal. Done!
 
