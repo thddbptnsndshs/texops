@@ -1,0 +1,86 @@
+% !TEX TS-program = XeLaTeX
+\documentclass[10 pt, handout]{beamer}
+
+% BEAMER SLIDES SETUP
+
+\usecolortheme{rose}
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\setbeamercolor{titlelike}{fg=violet}
+\setbeamercolor{structure}{fg=darkgray}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=purple,
+    citecolor=purple,
+    filecolor=purple,
+    urlcolor=purple,
+}
+
+% STYLE
+
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{subfig}
+\usepackage{enumerate}
+\usepackage[normalem]{ulem} % underlining
+\usepackage{booktabs} % tables
+\usepackage[table]{xcolor} % coloring tables
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % beautiful column types
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% LANGUAGE + FONT
+		    
+\usepackage[english]{babel}
+\usepackage[backend=biber,
+                     style=unified]{biblatex}
+\newcommand{\citeay}[2][]{
+   \citeauthor{#2} (\citeyear[#1]{#2})}
+\addbibresource{ref.bib}
+\usepackage{fontspec}  
+\setmainfont{Fira Sans}
+
+% DRAWING
+
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{trees,arrows}
+\usetikzlibrary{positioning}
+
+% LINGUISTICS 
+
+\usepackage{gb4e}
+\usepackage{expex}
+\usepackage[glossaries]{leipzig}
+\makeglossaries
+%\newleipzig {indef} {indef} {Indefinite}
+
+\title{}
+\author{}
+\institute{}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{}
+    \tableofcontents
+\end{frame}
+
+			\section{}
+
+\begin{frame}{}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+%\bibliography{ref}
+\printbibliography
+\end{frame}
+
+\end{document}

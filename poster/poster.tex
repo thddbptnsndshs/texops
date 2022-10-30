@@ -1,0 +1,103 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+
+% BEAMER POSTER SETTINGS
+
+\documentclass[final]{beamer}
+\usepackage{lmodern}
+\usepackage[size=custom,width=120,height=85.1,scale=1.5]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{mit}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\graphicspath{ {./images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{float}
+\usepackage{enumerate}
+
+% TEXT + LINGUISTICS
+
+\usepackage[english]{babel}
+\usepackage[
+  backend=biber
+, style=unified
+, url=false
+, doi=false
+, bibencoding=utf8]{biblatex}
+\usepackage{tipa}
+\usepackage[glossaries]{leipzig}
+\makeglossaries
+% \newleipzig {indef} {indef} {Indefinite}
+\usepackage{tikz-qtree}
+\usepackage{gb4e}
+\usepackage{expex}
+\let\eachwordone=\normalsize
+\let\eachwordtwo=\normalsize
+
+\title{}
+\author{}
+\date{}
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% ====================
+% Title
+% ====================
+
+\institute[shortinst]{}
+
+% ====================
+% Footer (optional)
+% ====================
+
+\footercontent{
+{} \hfill
+  \href{mailto:notalexandrashikunova@gmail.com}{notalexandrashikunova@gmail.com}}
+% (can be left out to remove footer)
+
+% ====================
+% Logo (optional)
+% ====================
+
+% use this to include logos on the left and/or right side of the header:
+% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
+% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+
+% ====================
+% Body
+% ====================
+
+\begin{document}
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}{}
+  \end{block}
+
+\end{column}
+
+\end{columns}
+\end{frame}
+
+\end{document}

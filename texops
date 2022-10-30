@@ -1,0 +1,27 @@
+#!/bin/bash
+
+mkdir $2
+
+while [[ $# -gt 0 ]]; do 
+  case $1 in
+    -h)
+      cp -a ~/texops/handout/ $2/ 
+      echo "wow! a handout!"
+      shift
+      shift
+      ;;
+
+    -p)
+      cp -a ~/texops/poster/ $2/ 
+      echo "hey! a poster!"
+      shift
+      shift
+      ;;
+    -s)
+      cp -a ~/texops/slide/ $2/ 
+      echo "hey! a slide!"
+      shift
+      shift
+      ;;
+  esac
+done
