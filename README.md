@@ -20,8 +20,8 @@ A simple instrument for creating TeX projects from a cookie-cutter template. Thr
 3. Give necessary access permissions to the script:
 
 `cd /usr/local/bin` <br>
-`sudo chmod -x ./desktop`<br>
-`sudo chmod 755 desktop`<br>
+`sudo chmod -x .texops`<br>
+`sudo chmod 755 texops`<br>
 
 4. Open the `~/.zshrc` file and append the following lines:
 
