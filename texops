@@ -19,7 +19,11 @@ while [[ $# -gt 0 ]]; do
       ;;
     -s)
       cp -a ~/texops/slides/ $2/ 
+<<<<<<< HEAD
       echo "yay! slides!"
+=======
+      echo "hey! slides!"
+>>>>>>> 3dd80bd9b1c5099c9b0401e7f7325baff85e8c3e
       shift
       shift
       ;;
