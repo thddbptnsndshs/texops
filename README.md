@@ -3,7 +3,7 @@
 A simple instrument for creating TeX projects from a cookie-cutter template. Three project types are available:
 
 :page_facing_up: **handout** -- regular paper-style A4 document<br>
-:chart_with_upwards_trend: **poster** -- beamer poster in [https://github.com/anishathalye/gemini](Gemini theme)<br>
+:chart_with_upwards_trend: **poster** -- beamer poster in <a href="https://github.com/anishathalye/gemini">Gemini theme</a><br>
 :name_badge: **slides** -- beamer presentation<br>
 
 ## Installation
