@@ -26,9 +26,18 @@
 \usepackage{enumerate}
 \usepackage[normalem]{ulem} % underlining
 \usepackage{booktabs} % tables
-\usepackage[table]{xcolor} % coloring tables
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % beautiful column types
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\PassOptionsToPackage{table}{xcolor}% coloring tables
+
+\AtBeginSection[]{ % section header slides
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
 
 % LANGUAGE + FONT
 		    
@@ -51,7 +60,7 @@
 
 % LINGUISTICS 
 
-\usepackage{gb4e}
+%\usepackage{gb4e}
 \usepackage{expex}
 \usepackage[glossaries]{leipzig}
 \makeglossaries

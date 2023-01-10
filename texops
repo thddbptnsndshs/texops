@@ -18,8 +18,8 @@ while [[ $# -gt 0 ]]; do
       shift
       ;;
     -s)
-      cp -a ~/texops/slide/ $2/ 
-      echo "hey! a slide!"
+      cp -a ~/texops/slides/ $2/ 
+      echo "yay! slides!"
       shift
       shift
       ;;
