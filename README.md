@@ -34,11 +34,12 @@ A simple instrument for creating TeX projects from a cookie-cutter template. Thr
 
 Open Terminal and use the `texops` command:
 
-`texops [-h | -p | -s] <path/to/working/dir>`
+`texops [-h | -p | -s] -t <path/to/working/dir>`
 
 :pushpin: `-h` -- handout, paper-style<br>
 :pushpin: `-p` -- poster<br>
 :pushpin: `-s` -- slides<br>
+:pushpin: `-t` -- add a file with templates<br>
 
 The working directory is initialised by the command. The following files appear:
 
