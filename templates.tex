@@ -15,13 +15,45 @@
 
 % EXPEX EXAMPLE
 
-\ex 
+\ex\label{ex:}
 \begingl
 	\gla //
 	\glb //
 	\glft `' //
 \endgl
 \xe
+
+\ex\label{ex:}
+    \begin{multicols}{2}
+    \begin{compactitem}[{}]
+    	\item 
+    \end{compactitem}
+    \end{multicols}
+\xe	
+
+%STRICT CV REPRESENTATIONS
+
+			\ex\label{ex:}Example\\
+						\emph{gam} $+$ \emph{a} \\
+				\begin{tikzpicture}[>=latex]
+\matrix [matrix of nodes, row sep=0.1em,
+column sep={1.5em,between origins}]
+{
+|(c1)|{C} & |(v1)|{V} & |(c2)|{C} & |(v2)|{V} & |(c3)|{C} & |(v3)|{V} \\[0.6em]
+|(C1)|{g} & |(V1)|{a} & |(C2)|{m} & |(V2)|{ } & |(C3)|{ } & |(V3)|{a} \\
+};
+\draw (c1.south) -- (C1.north);
+\draw (v1.south) -- (V1.north);
+\draw (c2.south) -- (C2.north);
+\draw (v3.south) -- (V3.north);  % association lines
+\draw [->] (v3.north) -- ++(north:2.5ex) -| (v2.north) node[midway,above right] {G};  % government arrow
+\draw [->] (v2.120) -- ++(north:2.5ex) -| (v1.north) node[midway,above right]  {no G} node[pos=0.3,sloped,rotate=45]{$|$}node[pos=0.3,sloped,rotate=45]{$|$};  % crossed-out government arrow
+    \scoped[on background layer]  % shading
+    {
+\node[fill=pink!50, fit=(v2)(c3) ]   {};
+    }
+				\end{tikzpicture}
+			\xe
 
 % TIKZ TREE
 

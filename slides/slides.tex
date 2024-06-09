@@ -44,10 +44,8 @@
 % LANGUAGE + FONT
 		    
 \usepackage[english]{babel}
-\usepackage[backend=biber,
-                     style=unified]{biblatex}
-\newcommand{\citeay}[2][]{
-   \citeauthor{#2} (\citeyear[#1]{#2})}
+\usepackage[backend=biber, style=unified]{biblatex}
+\newcommand{\citeay}[2][]{\citeauthor{#2} (\citeyear[#1]{#2})}
 \addbibresource{ref.bib}
 \usepackage{fontspec}  
 \setmainfont{Fira Sans}

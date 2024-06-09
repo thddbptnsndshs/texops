@@ -17,14 +17,19 @@
 \usepackage[normalem]{ulem} % underlining
 \usepackage{booktabs} % tables
 \PassOptionsToPackage{table}{xcolor}% coloring tables
+\usepackage{pifont}
+\defbibenvironment{bibliography}  % tiny bibliography
+  {\noindent}% or {} if you like indentation
+  {\unspace}
+  {\quad\ding{118}\linespread{.55}\printtext\addspace}
+\renewcommand*{\bibfont}{\footnotesize\linespread{.55}}
+
 
 % LANGUAGE + FONT
 		    
 \usepackage[english]{babel}
-\usepackage[backend=biber,
-                     style=unified]{biblatex}
-\newcommand{\citeay}[2][]{
-   \citeauthor{#2} (\citeyear[#1]{#2})}
+\usepackage[backend=biber, style=unified]{biblatex}
+\newcommand{\citeay}[2][]{\citeauthor{#2} (\citeyear[#1]{#2})}
 \addbibresource{ref.bib}
 \usepackage{fontspec}  
 \setmainfont{Minion 3}
@@ -39,23 +44,33 @@
 
 % LINGUISTICS 
 
-%\usepackage{gb4e}
 \usepackage{expex}
+\lingset{numoffset=1ex, belowglpreambleskip=0ex, aboveglftskip=0ex, belowexskip=2ex, aboveexskip=0.5em}
+
 \usepackage[glossaries]{leipzig}
 \makeglossaries
 %\newleipzig {indef} {indef} {Indefinite}
 
-\title{}
-\author{}
-\date{}
+% TITLE IN HEADER OF PAGE (saves space)
+
+%\usepackage{fancyhdr}
+%
+%\pagestyle{fancy}
+%\headheight=14pt
+%
+%\fancyhf{}
+%
+%\lhead{\centering }
+%\thispagestyle{fancy}
 
 \begin{document}
 
-\maketitle
+\noindent\textbf{Title}\\
+\emph{Author(s)}\\
 
-\abstract{}
+\noindent\textbf{Section} 
 	
-		\section{} \label{}
+\noindent\textbf{References}
+\printbibliography[heading=none]
 
-\printbibliography
 \end{document}

@@ -4,13 +4,18 @@ mkdir $2
 
 while [[ $# -gt 0 ]]; do 
   case $1 in
-    -h)
-      cp -a ~/texops/handout/ $2/ 
-      echo "wow! a handout!"
+    -a)
+      cp -a ~/texops/abstract/ $2/ 
+      echo "an abstract! great."
       shift
       shift
       ;;
-
+    -P)
+      cp -a ~/texops/paper/ $2/ 
+      echo "wow! a paper!"
+      shift
+      shift
+      ;;
     -p)
       cp -a ~/texops/poster/ $2/ 
       echo "hey! a poster!"
@@ -25,7 +30,7 @@ while [[ $# -gt 0 ]]; do
       ;;
     -t)
       cp -a ~/texops/templates.tex $2/ 
-      echo "added a templates file"
+      echo "added a templates file. use it wisely."
       shift
       shift
       ;;
