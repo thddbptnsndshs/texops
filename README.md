@@ -2,7 +2,8 @@
 
 A simple instrument for creating TeX projects from a cookie-cutter template. Three project types are available:
 
-:page_facing_up: **handout** -- regular paper-style A4 document<br>
+:page_facing_up: **paper** -- regular paper-style A4 document<br>
+:mailbox: **abstract** -- abstract (like paper but more space-efficient)<br>
 :chart_with_upwards_trend: **poster** -- beamer poster in <a href="https://github.com/anishathalye/gemini">Gemini theme</a><br>
 :name_badge: **slides** -- beamer presentation<br>
 
@@ -34,16 +35,17 @@ A simple instrument for creating TeX projects from a cookie-cutter template. Thr
 
 Open Terminal and use the `texops` command:
 
-`texops [-h | -p | -s] -t <path/to/working/dir>`
+`texops [-a | -p | -P | -s] -t <path/to/working/dir>`
 
-:pushpin: `-h` -- handout, paper-style<br>
+:pushpin: `-a` -- abstract<br>
+:pushpin: `-P` -- paper<br>
 :pushpin: `-p` -- poster<br>
 :pushpin: `-s` -- slides<br>
 :pushpin: `-t` -- add a file with templates<br>
 
 The working directory is initialised by the command. The following files appear:
 
-:paperclip: `slides.tex`, `handout.tex` or `poster.tex` -- TeX code<br>
+:paperclip: `slides.tex`, `paper.tex`, `abstract.tex' or `poster.tex` -- TeX code<br>
 :paperclip: `images/` -- image directory<br>
 :paperclip: `ref.bib` -- empty bibliography file<br>
 :paperclip: `templates.tex` -- file with useful code pieces for formatting tables, examples, etc.<br>
